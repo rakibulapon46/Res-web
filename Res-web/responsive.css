@@ -1,0 +1,64 @@
+@media print{
+  body{
+    background: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (orientation: landscape){
+  body{
+    background-color: rgb(190, 250, 250);
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    background: rgb(255, 213, 213);
+  }
+    #content {
+        display: block;
+      }
+    #main_content {
+        max-width: 100%;
+        display: block;
+        border-right: 0px solid;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .child_content{
+        padding: 0 20px;
+        margin-bottom: 30px;
+      }
+
+      .child_content img {
+        display: block;
+        margin: 10px auto;
+      }
+
+      .child_content:nth-child(1) img {
+        max-width: 100%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+      .child_content:nth-child(1) {
+        display: block;
+    }
+
+    #main_sidebar {
+        max-width: 100%;
+      }
+
+      .child_sidebar{
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .child_sidebar img{
+        margin: 10px auto;
+      }
+
+      .child_sidebar h3{
+        text-align: left;
+        margin: 0 30px;
+      }
+}
